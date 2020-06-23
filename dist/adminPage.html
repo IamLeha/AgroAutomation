@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+        rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>AgroAutomation</title>
+    </head>
+    
+    <body>
+        <header class="header">
+            <nav class="navbar navbar--above  navbar-expand-lg navbar-dark deep-purple accent-4">
+                <div class="container"> <a class="navbar-brand" href="index.html"><strong>AgroAutomation</strong></a>
+                    <button
+                    class="navbar-toggler m-0 p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span>
+
+                        <div class="nav-burger">
+
+                            <input type="checkbox" id="checkboxBurger" class="checkboxBurger visuallyHidden">
+
+                            <label class="nav-burger-label" for="checkboxBurger">
+
+                              <div class="hamburger hamburger3">
+
+                                <span class="bar bar1"></span> <span class="bar bar2"></span>
+                        <span
+                        class="bar bar3"></span> <span class="bar bar4"></span>
+                </div>
+                </label>
+                </div>
+                </span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item "> <a class="nav-link" href="adminPage.html">adminPage </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Profile</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item"> <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <section class="adminPage">
+            <div class="adminPage-container container d-flex">
+                <div class="accordion md-accordion d-flex w-100 accordion--custom" id="accordionEx"
+                role="tablist" aria-multiselectable="true">
+                    <div class="w-100 w-sm-25 list-group card-container">
+                        <div class="card-header card-header--custom mt-1" role="tab" id="headingOne1"> <a class="text-muted" class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                            href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
+
+                        <h5 class="mb-0 card-header-title">Заказчик 1</h5>
+
+                    </a>
+                        </div>
+                        <div class="card-header card-header--custom mt-1" role="tab" id="headingTwo2"> <a class="text-muted" class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                            href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+
+                        <h5 class="mb-0 card-header-title">Заказчик 2</h5>
+
+                    </a>
+                        </div>
+                        <div class="card-header card-header--custom mt-1" role="tab" id="headingThree3"> <a class="text-muted" class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                            href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+
+                        <h5 class="mb-0 card-header-title">Заказчик 3</h5>
+
+                    </a>
+                        </div>
+                        <div class="card-header card-header--custom mt-1" role="tab" id="headingFour4"> <a class="text-muted" class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                            href="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
+
+                        <h5 class="mb-0 card-header-title">Заказчик 4</h5>
+
+                    </a>
+                        </div>
+                    </div>
+                    <div class="w-100 w-sm-75">
+                        <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                        data-parent="#accordionEx">
+                            <div class="card-body mt-1 objectButton-container">
+                                <div class="mb-4 mb-sm-2 objectButton-item">
+                                    <button type="button" class="btn btn-deep-purple objectButton m-0" data-toggle="collapse"
+                                    data-target="#objectOne"> <i class="far fa-object-ungroup mr-2"></i> Объект 1</button>
+                                    <div id="objectOne"
+                                    class="collapse show object-content">
+                                        <p class="mt-3">картинка силоса при нажатие на которую происходит переход на страницу
+                                            данного силоса</p>
+                                        <p>картинка силкорпуса при нажатие на которую происходит переход на страницу
+                                            данного силкорпуса</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4 mb-sm-2 objectButton-item">
+                                    <button type="button" class="btn btn-deep-purple objectButton m-0" data-toggle="collapse"
+                                    data-target="#objectTwo"><i class="far fa-object-ungroup mr-2"></i> Объект 2</button>
+                                    <div id="objectTwo"
+                                    class="collapse object-content">
+                                        <p class="mt-3">картинка силоса при нажатие на которую происходит переход на страницу
+                                            данного силоса</p>
+                                        <p>картинка силкорпуса при нажатие на которую происходит переход на страницу
+                                            данного силкорпуса</p>
+                                    </div>
+                                </div>
+                                <div class="objectButton-item">
+                                    <button type="button objectButton" class="btn btn-deep-purple m-0" data-toggle="collapse"
+                                    data-target="#objectThree"><i class="far fa-object-ungroup mr-2"></i> Объект 3</button>
+                                    <div id="objectThree"
+                                    class="collapse object-content">
+                                        <p class="mt-3">картинка силоса при нажатие на которую происходит переход на страницу
+                                            данного силоса</p>
+                                        <p>картинка силкорпуса при нажатие на которую происходит переход на страницу
+                                            данного силкорпуса</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                        data-parent="#accordionEx">
+                            <div class="card-body objectButton-container">
+                                <div class="mb-4 mb-sm-2 objectButton-item">
+                                    <button type="button" class="btn btn-deep-purple objectButton m-0" data-toggle="collapse"
+                                    data-target="#objectOne"> <i class="far fa-object-ungroup mr-2"></i> Объект 1</button>
+                                    <div id="objectOne"
+                                    class="collapse object-content">
+                                        <p class="mt-3">картинка силоса при нажатие на которую происходит переход на страницу
+                                            данного силоса</p>
+                                        <p>картинка силкорпуса при нажатие на которую происходит переход на страницу
+                                            данного силкорпуса</p>
+                                    </div>
+                                </div>
+                                <div class="objectButton-item">
+                                    <button type="button" class="btn btn-deep-purple m-0 objectButton" data-toggle="collapse"
+                                    data-target="#objectThree"><i class="far fa-object-ungroup mr-2"></i> Объект 3</button>
+                                    <div id="objectThree"
+                                    class="collapse object-content">
+                                        <p class="mt-3">картинка силоса при нажатие на которую происходит переход на страницу
+                                            данного силоса</p>
+                                        <p>картинка силкорпуса при нажатие на которую происходит переход на страницу
+                                            данного силкорпуса</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                        data-parent="#accordionEx">
+                            <div class="card-body objectButton-container">
+                                <div class="mb-4 mb-sm-2 objectButton-item">
+                                    <button type="button" class="btn btn-deep-purple objectButton m-0" data-toggle="collapse"
+                                    data-target="#objectOne"> <i class="far fa-object-ungroup mr-2"></i> Объект 1</button>
+                                    <div id="objectOne"
+                                    class="collapse show object-content">
+                                        <p class="mt-3">картинка силоса при нажатие на которую происходит переход на страницу
+                                            данного силоса</p>
+                                        <p>картинка силкорпуса при нажатие на которую происходит переход на страницу
+                                            данного силкорпуса</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4 mb-sm-2 objectButton-item">
+                                    <button type="button" class="btn btn-deep-purple m-0 objectButton" data-toggle="collapse"
+                                    data-target="#objectTwo"><i class="far fa-object-ungroup mr-2"></i> Объект 2</button>
+                                    <div id="objectTwo"
+                                    class="collapse object-content">
+                                        <p class="mt-3">картинка силоса при нажатие на которую происходит переход на страницу
+                                            данного силоса</p>
+                                        <p>картинка силкорпуса при нажатие на которую происходит переход на страницу
+                                            данного силкорпуса</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4"
+                        data-parent="#accordionEx">
+                            <div class="card-body mt-1 objectButton-container">
+                                <div class="mb-4 mb-sm-2 objectButton-item">
+                                    <button type="button" class="btn btn-deep-purple objectButton m-0" data-toggle="collapse"
+                                    data-target="#objectOne"> <i class="far fa-object-ungroup mr-2"></i> Объект 1</button>
+                                    <div id="objectOne"
+                                    class="collapse object-content">
+                                        <p class="mt-3">картинка силоса при нажатие на которую происходит переход на страницу
+                                            данного силоса</p>
+                                        <p>картинка силкорпуса при нажатие на которую происходит переход на страницу
+                                            данного силкорпуса</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4 mb-sm-2 objectButton-item">
+                                    <button type="button" class="btn btn-deep-purple objectButton m-0" data-toggle="collapse"
+                                    data-target="#objectTwo"><i class="far fa-object-ungroup mr-2"></i> Объект 2</button>
+                                    <div id="objectTwo"
+                                    class="collapse object-content">
+                                        <p class="mt-3">картинка силоса при нажатие на которую происходит переход на страницу
+                                            данного силоса</p>
+                                        <p>картинка силкорпуса при нажатие на которую происходит переход на страницу
+                                            данного силкорпуса</p>
+                                    </div>
+                                </div>
+                                <div class="objectButton-item">
+                                    <button type="button objectButton" class="btn btn-deep-purple m-0" data-toggle="collapse"
+                                    data-target="#objectThree"><i class="far fa-object-ungroup mr-2"></i> Объект 3</button>
+                                    <div id="objectThree"
+                                    class="collapse object-content">
+                                        <p class="mt-3">картинка силоса при нажатие на которую происходит переход на страницу
+                                            данного силоса</p>
+                                        <p>картинка силкорпуса при нажатие на которую происходит переход на страницу
+                                            данного силкорпуса</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js">
+</script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <script src="js/all.js"></script>
+    </body>
+
+</html>

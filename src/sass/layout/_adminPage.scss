@@ -1,0 +1,53 @@
+.card-header {
+
+    &--custom {
+        border: none;
+        text-align: center;
+        padding: .75rem 1.25rem;
+        background-color: #fff;
+        border: 1px solid $fontColorBlack;
+    }
+}
+
+.card-container{
+    padding: 1.25rem;
+}
+
+.card-header-title{
+    color: $fontColorBlack;
+}
+
+@media screen and (max-width: 992px){
+    .adminPage{
+        padding-top: 86px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .adminPage{
+        padding-top: 0px;
+    }
+
+    .accordion--custom{
+        flex-wrap: wrap;
+    }
+
+    .objectButton{
+        padding: .84rem 1.14rem !important;
+        
+    }
+
+    .objectButton-item{
+        margin: 0 15px;
+    }
+
+    .objectButton-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    .object-content{
+        
+    }
+}
