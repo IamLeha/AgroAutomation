@@ -15,8 +15,8 @@ const htmlPartial = require('gulp-html-partial');
 const isProd = process.env.NODE_ENV === 'prod';
 
 const htmlFile = [
-    'index.html',
-    'adminPage.html'
+    'src/index.html',
+    'src/adminPage.html'
 ]
 
 function html() {
@@ -27,7 +27,7 @@ function html() {
         .pipe(gulpIf(isProd, htmlmin({
             collapseWhitespace: true
         })))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('./'));
 }
 
 function css() {
@@ -63,7 +63,7 @@ function img() {
 function serve() {
     browserSync.init({
         open: true,
-        server: './dist'
+        server: './'
     });
 }
 
@@ -73,7 +73,7 @@ function browserSyncReload(done) {
 }
 
 function watchFiles() {
-    gulp.watch('./*.html', gulp.series(html, browserSyncReload));
+    gulp.watch('src/*.html', gulp.series(html, browserSyncReload));
     gulp.watch('src/partials/*.html', gulp.series(html, browserSyncReload));
     gulp.watch('src/**/*.scss', gulp.series(css, browserSyncReload));
     gulp.watch('src/**/*.js', gulp.series(js, browserSyncReload));
